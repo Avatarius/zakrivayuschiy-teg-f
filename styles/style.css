@@ -21,23 +21,25 @@
   font-variation-settings: 'wght' var(--main-text-weight, 400);
   background-color: var(--background-color, #fff);
   color: var(--accent-color, #fff);
-  padding: 102px 372px;
+  padding: 100px clamp(0rem, -8.143rem + 34.742vw, 23.125rem);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
 
+.stretching-block {
+  inline-size: var(--stretching-block-inline-size, clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem));
+}
+
 .header {
-  max-inline-size: 696px;
-  block-size: 364px;
-  margin-block-end: 104px;
+  margin-block-end: 100px;
   font-family: var(--accent-font, sans-serif);
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
   border: 2px solid var(--accent-color, #000);
-  padding: 136px 120.5px 25px;
+  padding: clamp(7.5rem, 7.148rem + 1.502vw, 8.5rem) clamp(0.875rem, -1.469rem + 10vw, 7.531rem) 25px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -45,14 +47,14 @@
 }
 
 .header__title {
-  font-size: 65px;
+  font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
   font-weight: 400;
   margin-block-end: 20px;
 }
 
 .header__text {
-  font-size: 23px;
-  margin-block-end: 21px;
+  font-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
+  margin-block-end: 23px;
 }
 
 .theme-menu__list {
@@ -107,7 +109,7 @@
 }
 
 .card__list-item {
-
+  inline-size: 100%;
 }
 
 .card {
@@ -125,15 +127,14 @@
 }
 
 .card__img-block {
+  aspect-ratio: 1 / 1;
   inline-size: 100%;
-  block-size: 700px;
   position: relative;
 }
 
 .card__img {
   object-fit: cover;
-  object-position: -335.017px 0;
-  background-size: 100%;
+  /* object-position: -335.017px 0; */
   inline-size: 100%;
   block-size: 100%;
   border-block: 2px solid var(--accent-color, #000);
@@ -152,8 +153,11 @@
   mix-blend-mode: hard-light;
   opacity: 0.5;
   position: absolute;
-  inset-inline-end: 23px;
-  inset-block-start: 27px;
+  inset-inline-end: clamp(0.688rem, 0.467rem + 0.939vw, 1.313rem);
+  inset-block-start: clamp(1.688rem, 1.643rem + 0.188vw, 1.813rem);
+  /* inset-block-start: 29px; */
+  /* inset-inline-end: 11px; */
+  /* inset-block-start: 27px; */
 
 }
 
@@ -166,7 +170,7 @@
 }
 
 .card__text-block {
-  padding: 25px;
+  padding: clamp(1.875rem, 1.743rem + 0.563vw, 2.25rem) 25px 25px;
 }
 
 .card__text {
@@ -182,7 +186,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  padding: 0 25px 22px;
+  padding: 0 22px 22px;
 }
 
 .card__button {
@@ -203,4 +207,12 @@
   padding: 9px 17px;
   inline-size: 130px;
   block-size: 38px;
+}
+
+
+@media (width <= 375px) {
+  .stretching-block {
+    --stretching-block-inline-size: 100%;
+    padding-inline: 0;
+  }
 }

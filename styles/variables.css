@@ -8,4 +8,5 @@
   --background-color: #fff;
   --accent-color: #000;
   --img-label-color: #fff;
+  --stretching-block-inline-size: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
 }
