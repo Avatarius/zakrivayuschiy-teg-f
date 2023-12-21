@@ -299,9 +299,8 @@
       </ul>
     </main>
     <footer class="footer">
-
-      <button class="button footer__button">
-        <svg viewBox="0 0 21 21" class="footer_floppy-icon">
+      <button class="button footer__button" onclick="window['save-dialog'].showModal()">
+        <svg viewBox="0 0 21 21" class="footer__floppy-icon">
           <use href="./svg/floppy.svg#floppy">
         </svg>
         <span class="button__text">
@@ -309,6 +308,22 @@
         </span>
       </button>
     </footer>
+    <dialog id="save-dialog" class="dialog">
+      <div class="dialog__title-block">
+        <svg viewBox="0 0 21 21" class="dialog__floppy-icon">
+          <use href="./svg/floppy.svg#floppy">
+        </svg>
+        <h2 class="dialog__title">
+          Вставьте <br>
+  дискету, чтобы продолжить
+        </h2>
+      </div>
+      <button class="button dialog-ok-button" onclick="window['save-dialog'].close()">
+        <span class="button__text">
+          ок
+        </span>
+      </button>
+    </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
