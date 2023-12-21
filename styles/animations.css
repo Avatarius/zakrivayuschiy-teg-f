@@ -20,6 +20,26 @@
   }
 
   to {
-    inset-inline-start: -12px;
+    inset-inline-start: -11px;
+  }
+}
+
+@keyframes heart-scale {
+  from {
+    scale: 1;
+  }
+
+  to {
+    scale: 1.5;
+  }
+}
+
+@keyframes sparks-opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
