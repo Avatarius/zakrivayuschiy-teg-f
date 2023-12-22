@@ -3,6 +3,8 @@
 :root {
   --main-font: "Inter-Variable";
   --accent-font: "PressStart2P";
+  --main-text-weight: 400;
+  --card-title-weight: 700;
   --background-image:
     repeating-linear-gradient(
       90deg,
@@ -20,9 +22,6 @@
       #1a1a1a
     );
   --background-color: #fff;
-  --main-text-weight: 400;
-  --card-title-weight: 700;
-  --background-color: #fff;
   --accent-color: #000;
   --img-label-color: #fff;
   --stretching-block-inline-size: clamp(
@@ -31,6 +30,5 @@
     43.75rem
   );
   --button-text-color: #fff;
-  --heart-contour-color: #000;
   --heart-animation-color: #ff0000;
 }

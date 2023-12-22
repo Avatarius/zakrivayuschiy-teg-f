@@ -22,6 +22,7 @@
   background-color: var(--background-color, #fff);
   background-image: var(--background-image);
   background-attachment: fixed;
+  background-position: center;
   color: var(--accent-color, #fff);
   padding: 100px clamp(0rem, -8.143rem + 34.742vw, 23.125rem);
   display: flex;
@@ -142,7 +143,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 51px;
+  gap: 52.5px;
 }
 
 .card__list-item {
@@ -172,6 +173,7 @@
 
 .card__img {
   object-fit: cover;
+  object-position: center 10px;
   inline-size: 100%;
   block-size: 100%;
   border-block: 2px solid var(--accent-color, #000);
@@ -180,6 +182,7 @@
 .card__img-label {
   font-family: var(--accent-font, sans-serif);
   font-size: 14px;
+  font-variation-settings: 'wght' 400;
   line-height: normal;
   text-shadow:
     -1px 0 var(--img-label-color, #fff),
@@ -401,9 +404,11 @@
 
 .dialog {
   padding-block: 30px;
-  padding-inline: 30px;
-  inline-size: 353px;
-  block-size: 191px;
+  padding-inline: calc(4.375rem - clamp(1.875rem, 1.655rem + 0.939vw, 2.5rem));
+  background-color: var(--background-color, #fff);
+  border: 2px solid var(--accent-color, #000);
+  /* inline-size: 353px; */
+  /* block-size: 191px; */
 }
 
 .dialog[open] {
@@ -420,6 +425,7 @@
 }
 
 .dialog__title-block {
+  align-self: flex-start;
   display: grid;
   grid-template-columns: 39px 1fr;
   justify-content: start;
@@ -429,8 +435,8 @@
 
 .dialog__floppy-icon {
   color: var(--accent-color, #000);
-  inline-size: 39px;
-  block-size: 39px;
+  inline-size: 100%;
+  block-size: 100%;
 
 }
 
@@ -443,7 +449,8 @@
 }
 
 .dialog-ok-button {
-  inline-size: 293px;
+  text-transform: uppercase;
+  inline-size: clamp(16.063rem, 15.27rem + 3.38vw, 18.313rem);
   block-size: 38px;
   padding: 9px 17px;
 }
