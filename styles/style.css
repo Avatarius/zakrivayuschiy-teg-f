@@ -70,10 +70,6 @@
   margin-inline-start: 17px;
 }
 
-.theme-menu__item {
-
-}
-
 .theme-menu__button {
   appearance: none;
   background-color: transparent;
@@ -130,13 +126,6 @@
   transition: scale 0.3s ease;
   transform-origin: 0 0;
 }
-
-
-.content {
-
-}
-
-
 
 .card__list {
   display: flex;
@@ -277,18 +266,6 @@
   cursor: pointer;
 }
 
-.like-icon {
-
-}
-
-.like-icon:hover {
-
-}
-
-.heart {
-
-}
-
 .like-icon.is-liked .heart {
   transform-origin: center;
   animation: heart-scale 0.3s 0.1s ease-in alternate 2;
@@ -407,8 +384,6 @@
   padding-inline: calc(4.375rem - clamp(1.875rem, 1.655rem + 0.939vw, 2.5rem));
   background-color: var(--background-color, #fff);
   border: 2px solid var(--accent-color, #000);
-  /* inline-size: 353px; */
-  /* block-size: 191px; */
 }
 
 .dialog[open] {
