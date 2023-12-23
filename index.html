@@ -18,8 +18,8 @@
   </head>
   <body class="page">
     <header class="stretching-block header">
-      <h1 class="header__title">&lt;/HTML&gt;</h1>
-      <p class="header__text">закрывающий тег</p>
+      <a class="header__logo">&lt;/HTML&gt;</a>
+      <h1 class="header__title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -531,7 +531,8 @@
       </ul>
     </main>
     <footer class="footer">
-      <button
+      <form method="dialog">
+        <button
         class="button footer__button"
         onclick="window['save-dialog'].showModal()"
       >
@@ -558,6 +559,8 @@
       >
         <span class="button__text"> ок </span>
       </button>
+      </form>
+
     </dialog>
     <script src="./scripts/like.js"></script>
   </body>
