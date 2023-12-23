@@ -199,8 +199,7 @@
 }
 
 .card__img_saturate-hue {
-  filter: saturate(150%);
-  filter: hue-rotate(90deg);
+  filter: saturate(150%) hue-rotate(90deg);
 }
 
 .card__img_sepia {
