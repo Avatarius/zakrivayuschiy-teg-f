@@ -190,11 +190,16 @@
   filter: grayscale(1);
 }
 
-.card__img_saturate {
+/* .card__img_saturate {
   filter: saturate(150%);
 }
-
+ */
 .card__img_hue {
+  filter: hue-rotate(90deg);
+}
+
+.card__img_saturate-hue {
+  filter: saturate(150%);
   filter: hue-rotate(90deg);
 }
 
