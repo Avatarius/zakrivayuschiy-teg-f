@@ -110,6 +110,11 @@
   scale: 1 1;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
 .card__list {
   display: flex;
   flex-direction: column;
@@ -149,6 +154,7 @@
   object-position: center;
   inline-size: 100%;
   block-size: 100%;
+  aspect-ratio: 1/1;
 }
 
 .card__img_brightness {
@@ -211,17 +217,18 @@
 }
 
 .card__text-block {
-  padding: 32px 25px 25px;
+  padding: 24px 25px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 27px;
 }
 
 .card__text {
   font-size: 18px;
   line-height: 1.16667;
   max-inline-size: 646px;
-}
-
-.card__text-custom {
-  margin-block-start: 27px;
 }
 
 .card__button-block {
@@ -301,23 +308,22 @@
   block-size: 38px;
 }
 
-.footer {
-  display: flex;
-  place-content: center;
+.save-form {
   margin-block-start: 52px;
-  background-color: var(--main-theme-color, #fff);
 }
 
-.footer__button {
+.save-button {
+  background-color: var(--main-theme-color, #fff);
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 8px;
   padding: 15px 20px;
   line-height: 0.9;
+  margin: 0 auto;
 }
 
-.footer__floppy-icon {
+.save-button__floppy-icon {
   color: var(--button-text-color, #fff);
   inline-size: calc(3.063rem - clamp(1.313rem, 1.158rem + 0.657vw, 1.75rem));
   mix-blend-mode: difference;
@@ -328,7 +334,7 @@
     --stretching-block-inline-size: 100%;
     padding-inline: 0;
   }
-  .footer__button {
+  .save-button {
     flex-direction: column;
     justify-content: center;
   }
@@ -339,6 +345,7 @@
   padding-inline: calc(4.375rem - clamp(1.875rem, 1.655rem + 0.939vw, 2.5rem));
   padding-block: 30px;
   background-color: var(--main-theme-color, #fff);
+  inline-size: clamp(21.313rem, 20.96rem + 1.502vw, 22.313rem);
 }
 
 .dialog[open] {
@@ -347,6 +354,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 30px;
+
 }
 
 .dialog::backdrop {
@@ -355,12 +363,13 @@
 }
 
 .dialog__title-block {
+  align-self: flex-start;
   display: grid;
   grid-template-columns: 39px 1fr;
   justify-content: start;
   align-items: center;
   gap: 20px;
-  align-self: flex-start;
+  max-inline-size: 260px;
 }
 
 .dialog__floppy-icon {
@@ -378,9 +387,15 @@
   font-weight: 400;
 }
 
+.dialog-form {
+  inline-size: 100%;
+  block-size: 38px;
+  justify-self: center;
+}
+
 .dialog-ok-button {
   padding: 9px 17px;
   text-transform: uppercase;
-  inline-size: clamp(16.063rem, 15.27rem + 3.38vw, 18.313rem);
+  inline-size: 100%;
   block-size: 38px;
 }
