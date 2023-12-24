@@ -46,8 +46,8 @@
 
 .header__title {
   margin-block-end: 23px;
-  font-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
   font-weight: 400;
+  font-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
 }
 
 .theme-menu__list {
@@ -144,9 +144,9 @@
 
 .card__img-block {
   position: relative;
+  border-block: 2px solid var(--accent-color, #000);
   aspect-ratio: 1 / 1;
   inline-size: 100%;
-  border-block: 2px solid var(--accent-color, #000);
 }
 
 .card__img {
@@ -217,12 +217,12 @@
 }
 
 .card__text-block {
-  padding: 24px 25px 25px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 27px;
+  padding: 24px 25px 25px;
 }
 
 .card__text {
@@ -313,14 +313,14 @@
 }
 
 .save-button {
-  background-color: var(--main-theme-color, #fff);
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 8px;
+  margin: 0 auto;
   padding: 15px 20px;
   line-height: 0.9;
-  margin: 0 auto;
+  background-color: var(--main-theme-color, #fff);
 }
 
 .save-button__floppy-icon {
@@ -354,7 +354,6 @@
   justify-content: flex-start;
   align-items: center;
   gap: 30px;
-
 }
 
 .dialog::backdrop {
@@ -363,12 +362,12 @@
 }
 
 .dialog__title-block {
-  align-self: flex-start;
   display: grid;
   grid-template-columns: 39px 1fr;
   justify-content: start;
   align-items: center;
   gap: 20px;
+  align-self: flex-start;
   max-inline-size: 260px;
 }
 
@@ -381,16 +380,16 @@
 .dialog__title {
   color: var(--accent-color, #000);
   font-family: var(--accent-font, fantasy);
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
   text-transform: uppercase;
-  font-weight: 400;
 }
 
 .dialog-form {
+  justify-self: center;
   inline-size: 100%;
   block-size: 38px;
-  justify-self: center;
 }
 
 .dialog-ok-button {
